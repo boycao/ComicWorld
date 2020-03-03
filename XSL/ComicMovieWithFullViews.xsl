@@ -3,7 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xs"
     version="2.0">
-    <xsl:variable name="itemId" select="'sb1'"/>
+    <xsl:variable name="itemId" select="'cm1'"/>
     <xsl:template match="/">
         <html>
             <head>
@@ -35,7 +35,7 @@
     <xsl:template name="fullView">
         <xsl:param name="itemId"/>
         <div class="contentArea">
-            <xsl:for-each select="//comicbook[@id=$itemId]">
+            <xsl:for-each select="//comicmovie[@id=$itemId]">
                 <h4><xsl:value-of select="title"/></h4>
                 <div class="sources">
                     References:
@@ -52,12 +52,8 @@
                             <div class="short-desc">
                                 <xsl:copy-of select="description"></xsl:copy-of>
                             </div>
-                            <div class="director">
-                                <b>Author</b>: <xsl:value-of select="director"/>
-                            </div>
-                            
                             <div class="actors">
-                                <b>actors</b>: <xsl:value-of select="actors"/>
+                                <b>Actors</b>: <xsl:value-of select="actors"/>
                             </div>
                             <div class="year">
                                 <b>Year</b>: <xsl:value-of select="year"/>
@@ -65,8 +61,8 @@
                             <div class="price">
                                 <span class="money">$<xsl:value-of select="price"/></span>
                             </div>
-                            <div class="publisher">
-                                <b>publisher</b>: <xsl:value-of select="publisher"/>
+                            <div class="director">
+                                <b>director</b>: <xsl:value-of select="director"/>
                             </div>
                             <div class="series">
                                 <b>series</b>: <xsl:value-of select="series"/>
@@ -75,12 +71,15 @@
                                 <b>language</b>: <xsl:value-of select="language"/>
                             </div>
                             <div class="length">
-                                <b>Cover Type</b>: <xsl:value-of select="length"/>
+                                <b>length</b>: <xsl:value-of select="length"/>
                             </div>
                             <div class="overallRating">
                                 <b>Overall Rating</b>: <xsl:value-of select="rating"/>
                             </div>
                             
+                            <div class="storage">
+                                <b>Storage</b>: <xsl:value-of select="storage"/>
+                            </div>
                             
                         </div>
                         <div class="commentsArea">
@@ -91,13 +90,13 @@
                                         <div class="col-md-5">
                                             <xsl:choose>
                                                 <xsl:when test="@new = 'true'">
-                                                    <div class="card new">
-                                                        <span class="customer-name"><xsl:value-of select="@author"/><xsl:text>  </xsl:text><img src="images/new-label-512.png" alt="new review" width="20" height="20"/></span>
+                                                    <div class="comment new">
+                                                        <span class="customer-name"><xsl:value-of select="@author"/><xsl:text>  </xsl:text><img src="images/new.png" alt="new review" width="20" height="20"/></span>
                                                         <p class="mb-4 box-shadow"><xsl:value-of select="."/></p>
                                                     </div>
                                                 </xsl:when>
                                                 <xsl:when test="@new = 'false'">
-                                                    <div class="card">
+                                                    <div class="comment">
                                                         <span class="customer-name"><xsl:value-of select="@author"/></span>
                                                         <p class="mb-4 box-shadow"><xsl:value-of select="."/></p>
                                                     </div>
@@ -132,8 +131,10 @@
     <xsl:template name="globalNavView">
         <div class="globaNavlArea navbar-nav-scroll">
             <ul class="nav flex-row">
-                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../HTML/Home.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-itme"><a class="nav-link" href="#">ComicBookFullView</a></li>
+                <li class="nav-itme"><a class="nav-link" href="#">ComicMovieFullView</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li> 
             </ul>
         </div>
@@ -142,6 +143,8 @@
         <footer class="footerArea page">
             <div class="container">
                 <span class="footer-text">Qianzhu Fan</span>
+                <br/>
+                <span class="footer-text">Comic Movie InfoType</span>
             </div>
         </footer>
     </xsl:template>

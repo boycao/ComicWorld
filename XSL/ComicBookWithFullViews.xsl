@@ -3,7 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xs"
     version="2.0">
-    <xsl:variable name="itemId" select="'sb1'"/>
+    <xsl:variable name="itemId" select="'cb1'"/>
     <xsl:template match="/">
         <html>
             <head>
@@ -90,13 +90,13 @@
                                         <div class="col-md-5">
                                             <xsl:choose>
                                                 <xsl:when test="@new = 'true'">
-                                                    <div class="card new">
-                                                        <span class="customer-name"><xsl:value-of select="@author"/><xsl:text>  </xsl:text><img src="images/new-label-512.png" alt="new review" width="20" height="20"/></span>
+                                                    <div class="comment new">
+                                                        <span class="customer-name"><xsl:value-of select="@author"/><xsl:text>  </xsl:text><img src="images/new.png" alt="new review" width="20" height="20"/></span>
                                                         <p class="mb-4 box-shadow"><xsl:value-of select="."/></p>
                                                     </div>
                                                 </xsl:when>
                                                 <xsl:when test="@new = 'false'">
-                                                    <div class="card">
+                                                    <div class="comment">
                                                         <span class="customer-name"><xsl:value-of select="@author"/></span>
                                                         <p class="mb-4 box-shadow"><xsl:value-of select="."/></p>
                                                     </div>
@@ -131,9 +131,10 @@
     <xsl:template name="globalNavView">
         <div class="globaNavlArea navbar-nav-scroll">
             <ul class="nav flex-row">
-                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="../HTML/Home.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-itme"><a class="nav-link" href="</li>
+                <li class="nav-itme"><a class="nav-link" href="#">ComicBookFullView</a></li>
+                <li class="nav-itme"><a class="nav-link" href="#">ComicMovieFullView</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li> 
             </ul>
         </div>
