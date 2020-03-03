@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="comicbookBase">
+        <xs:complexType>  
+            <xs:sequence>
+                <xs:element name="about">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="title"/>
+                            <xs:element name="author"/>
+                            <xs:element ref="description"/>
+                            <xs:element name="sourceDefs">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="unbounded" name="sourceDef">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element ref="title"/>
+                                                    <xs:element name="url"/>
+                                                    <xs:element ref="description"/>
+                                                </xs:sequence>
+                                                <xs:attribute ref="id" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="comicbooks">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="comicbook" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element ref="title"/>
+                                        <xs:element ref="description"/>
+                                        <xs:element name="specs">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="author"  type="xs:string" maxOccurs="unbounded"/>
+                                                    <xs:element name="year" type="xs:string"/>
+                                                    <xs:element name="publisher"  type="xs:string" maxOccurs="unbounded"/>
+                                                    <xs:element name="coverType" type="xs:string"/>
+                                                    <xs:element name="series"  type="xs:string" maxOccurs="unbounded"/>
+                                                    <xs:element name="language" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="images">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="image" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="filename" type="xs:anyURI"
+                                                                use="required"/>
+                                                            <xs:attribute name="caption" use="required"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="comments">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element maxOccurs="unbounded"
+                                                        name="comment" minOccurs="0">
+                                                        <xs:complexType mixed="true">
+                                                            <xs:attribute name="rating"  use="required"/>
+                                                            <xs:attribute name="author" type="xs:string"
+                                                                use="required"/>
+                                                            <xs:attribute name="new" type="xs:boolean"  use="required"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="rating">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:float">
+                                                    <xs:minInclusive value="0.1"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="price">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:float">
+                                                    <xs:minInclusive value="0.01"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="storage">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="0"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="sources">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element maxOccurs="unbounded"
+                                                        name="sourceRefId" type="xs:IDREF"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute ref="id" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="title" type="xs:string"/>
+    <xs:element name="description">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="p">
+                    <xs:complexType mixed="true">
+                        <xs:group maxOccurs="unbounded" ref="inline"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ul">
+                    <xs:complexType>
+                        <xs:sequence maxOccurs="unbounded">
+                            <xs:element name="li">
+                                <xs:complexType mixed="true">
+                                    <xs:group maxOccurs="unbounded" ref="inline"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:attribute name="id" type="xs:ID"/>
+    <xs:group name="inline">
+        <xs:choice>
+            <xs:element minOccurs="0" ref="b"/>
+            <xs:element minOccurs="0" ref="i"/>
+        </xs:choice>
+    </xs:group>
+    <xs:element name="b"/>
+    <xs:element name="i"/>
+</xs:schema>

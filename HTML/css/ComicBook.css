@@ -1,0 +1,131 @@
+.page{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  overflow:hidden;
+}
+
+.bannerArea{
+  padding: 1em;
+  color: white;
+  background-color: purple;
+  font-size: large;
+  clear: left;
+  font-family: fantasy;
+  border-style: dotted;
+  border-color: purple purple white purple;
+}
+
+.globaNavlArea{
+    background-color: purple;
+    font-family: sans-serif;
+}
+
+.card {
+    background-color: #fafafa;
+}
+.new{
+    background-color: #EBFEFF;
+}
+
+.localNavArea{
+  float: left;
+  border: 1px solid;
+  border-color: white;
+  max-width: 200px;
+  margin:5px;
+  padding: 0.5em; 
+}
+
+.localNavArea .nav-desc {
+    font-size: 15px;
+}
+
+
+.localNavArea .nav-link {
+    font-size: small;
+}
+.contentArea{
+  margin-left: 170px;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.product-img {
+    height: auto;
+    width: 50%;
+}
+
+.product-img img {
+    height: auto;
+    width: 100%;
+    display: block;
+    vertical-align: middle;
+}
+.money {
+    font-size: 20px;
+    font-weight: 700;
+    box-sizing: border-box;
+    color: black;
+}
+
+.inventory {
+    font-size: 12px;
+}
+.brand {
+    font-size: 12px;
+}
+
+.short-desc {
+    font-size: 12px;
+}
+
+.icon-tags {
+    font-size: 11px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.separator {
+    font-family: "Georgia";
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.series {
+    font-family: "Georgia";
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.review-items{
+    font-size: 12px;
+    font-family: "Open Sans";
+}
+
+.footerArea {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    
+    background-color: purple;
+}
+.footer-text {
+    color: white;
+}
+
+.customer-name {
+    font-weight: bold;
+}
+
+.customer-rating {
+    font-weight: bold;
+} 
+.review-items p {
+    display: block;
+}
+
+.numberofreviews {
+    font-size: 14px;
+}

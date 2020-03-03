@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comicmovieBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ComicMovieschema.xsd">
+    <about>
+        <title>COMIC MOIVE</title>
+        <author>
+            <name>QIANZHU FAN</name>
+            <email>qzhufan@uw.edu</email>
+        </author>
+        <description>
+            <p>This is a website contains information about <b>comic movies</b> with different
+                <i>series</i></p>
+            <p>Such as:</p>
+            <ul>
+                <li><b><i>1.DC</i></b></li>
+                <li><b><i>2.Marvel</i></b></li>
+            </ul>
+        </description>
+        <sourceDefs>
+            <sourceDef id="sCA">
+                <title>Captain America: The Winter Soldier (Plus Bonus Features)</title>
+                <url>https://www.amazon.com/gp/video/detail/B00JGMK1OI/ref=atv_dp_b00_det_c_UTPsmN_1_1</url>
+                <description>
+                    <p>Captain America: The Winter Soldier (Plus Bonus Features)</p>
+                </description>
+            </sourceDef>
+            <sourceDef id="sCW">
+                <title>Captain America: Civil War (Theatrical)</title>
+                <url>https://www.amazon.com/Infinity-Gauntlet-Marvel-Premiere-Classic/</url>
+                <description>
+                    <p>Captain America: Civil War (Theatrical)</p>
+                </description>
+            </sourceDef>
+            <sourceDef id="sThor">
+                <title>Thor</title>
+                <url>https://www.amazon.com/Joker-Black-Label-Brian-Azzarello/</url>
+                <description>
+                    <p>Thor</p>
+                </description>
+            </sourceDef>
+            <sourceDef id="sIM">
+                <title>Iron Man
+                </title>
+                <url>https://www.amazon.com/gp/video/detail/B00BUDGUBY/ref=atv_dp_b00_det_c_UTPsmN_1_3</url>
+                <description>
+                    <p>Iron Man
+                    </p>
+                </description>
+            </sourceDef>
+            <sourceDef id="sAM">
+                <title>AntMan</title>
+                <url>https://www.amazon.com/gp/video/detail/B011CUF0TC/ref=atv_dp_b01_det_c_UTPsmN_1_4</url>
+                <description>
+                    <p>AntManDS</p>
+                </description>
+            </sourceDef>
+            <sourceDef id="sDS">
+                <title>Doctor Strange</title>
+                <url>https://www.amazon.com/gp/video/detail/B01M5IPUKH/ref=atv_dp_b01_det_c_UTPsmN_1_4</url>
+                <description>
+                    <p>Doctor Strange</p>
+                </description>
+            </sourceDef>
+            <sourceDef id="sBatman">
+                <title>Batman: White Knight</title>
+                <url>https://www.amazon.com/Batman-White-Knight-Sean-Murphy/</url>
+                <description>
+                    <p>Batman: White Knight</p>
+                </description>
+            </sourceDef>
+            <sourceDef id="sBatmanYO">
+                <title>Batman:Year One</title>
+                <url>https://www.amazon.com/Batman-Year-One-Frank-Miller-emovie/</url>
+                <description>
+                    <p>Batman:Year OneBatman</p>
+                </description>
+            </sourceDef>
+            <sourceDef id="sMinecraft">
+                <title>Minecraft</title>
+                <url>https://www.amazon.com/Minecraft-Graphic-Novel-Sf%C3%88-M/</url>
+                <description>
+                    <p>Minecraft</p>
+                </description>
+            </sourceDef>
+            <sourceDef id="sEncyclopedia">
+                <title>Marvel Encyclopedia</title>
+                <url>https://www.amazon.com/Marvel-Encyclopedia-New-Stan-Lee/dp/1465478906/</url>
+                <description>
+                    <p>Marvel Encyclopedia Source</p>
+                </description>
+            </sourceDef>
+            <sourceDef id="sECH">
+                <title>The Essential Calvin and Hobbes: A Calvin and Hobbes Treasury</title>
+                <url>https://www.amazon.com/Essential-Calvin-Hobbes-Treasury-emovie/</url>
+                <description>
+                    <p>The Essential Calvin and Hobbes: A Calvin and Hobbes Treasury Source</p>
+                </description>
+            </sourceDef>
+            <sourceDef id="sStarWar">
+                <title>Star Wars Vol. 1: Skywalker Strikes </title>
+                <url>https://www.amazon.com/Star-Wars-Vol-Skywalker-Strikes-emovie/dp/B0153WYYEW/</url>
+                <description>
+                    <p>Star Wars Vol. 1: Skywalker Strikes </p>
+                </description>
+            </sourceDef>
+            <sourceDef id="sUM">
+                <title>Ultimate Marvel </title>
+                <url>https://www.amazon.com/Ultimate-Marvel-Adam-Bray/</url>
+                <description>
+                    <p>Ultimate Marvel Source</p>
+                </description>
+            </sourceDef>
+            <sourceDef id="sHulk">
+                <title>Hulk</title>
+                <url>https://www.amazon.com/Immortal-Hulk-Vol-Breaker-Worlds/</url>
+                <description>
+                    <p>Hulk</p>
+                </description>
+            </sourceDef>
+            <sourceDef id="sSuperman">
+                <title>All-Star Superman</title>
+                <url>https://www.amazon.com/All-Star-Superman-DC-Black-Label/</url>
+                <description>
+                    <p>All-Star Superman Source</p>
+                </description>
+            </sourceDef>
+        </sourceDefs>
+    </about>
+    <comicmovies>
+        <comicmovie id="cm1">
+            <title>Captain America: The Winter Soldier (Plus Bonus Features)</title>
+            <description>
+                <p>Captain America: The Winter Soldier (Plus Bonus Features)</p>
+            </description>
+            <actors>Chris Evans, Samuel L. Jackson, Scarlett Johansson</actors>
+            <specs>
+                <director>Anthony Russo, Joe Russo</director>
+                <year>2014</year>
+                <publisher>Marvel</publisher>
+                <length>159min</length>
+                <series>Marvel</series>
+                <language>English</language>
+            </specs>
+            <images>
+                <image filename="images/CaptainAmericaMovie.jpg" caption="cover"/>
+            </images>
+            <comments>
+                <comment new="true" rating="4" author="Mike"> This is a great movie</comment>
+                <comment new="false" rating="5" author="Tom">I love this movie</comment>
+            </comments>
+            <rating>4.5</rating>
+            <price>19.99</price>
+           
+            <sources>
+                <sourceRefId>sCA</sourceRefId>
+            </sources>
+        </comicmovie>
+        <comicmovie id="cm2">
+            <title>Captain America: Civil War (Theatrical)</title>
+            <description>
+                <p>Captain America: Civil War (Theatrical)</p>
+            </description>
+            <actors></actors>
+            <specs>
+                <director>Chris Evans, Robert Downey Jr., Scarlett Johansson</director>
+                <year>2016</year>
+                <publisher>Marvel</publisher>
+                <length>147</length>
+                <series>Marvel</series>
+                <language>English</language>
+            </specs>
+            <images>
+                <image filename="images/CivilWar.jpg" caption="cover"/>
+            </images>
+            <comments>
+                <comment new="true" rating="4" author="Mike"> This is a great movie</comment>
+                <comment new="false" rating="5" author="Tom">I love this movie</comment>
+            </comments>
+            <rating>4.5</rating>
+            <price>19.99</price>
+           
+            <sources>
+                <sourceRefId>sCW</sourceRefId>
+            </sources>
+        </comicmovie>
+        <comicmovie id="cm3">
+            <title>Thor: The Dark World (With Digital-Exclusive Bonus Features)</title>
+            <description>
+                <p>Thor: The Dark World (With Digital-Exclusive Bonus Features)</p>
+            </description>
+            <actors>Chris Hemsworth, Natalie Portman, Tom Hiddleston</actors>
+            <specs>
+                <director>Alan Taylor</director>
+                <year>2013</year>
+                <publisher>Marvel</publisher>
+                <length>183min</length>
+                <series>Marvel</series>
+                <language>English</language>
+            </specs>
+            <images>
+                <image filename="images/ThorMovie.jpg" caption="cover"/>
+            </images>
+            <comments>
+                <comment new="true" rating="4" author="Mike"> This is a great movie</comment>
+                <comment new="false" rating="5" author="Tom">I love this movie</comment>
+            </comments>
+            <rating>4.5</rating>
+            <price>12.89</price>
+           
+            <sources>
+                <sourceRefId>sThor</sourceRefId>
+            </sources>
+        </comicmovie>
+        <comicmovie id="cm4">
+            <title>Iron Man</title>
+            <description>
+                <p>Iron Man</p>
+            </description>
+            <actors>Robert Downey Jr., Terrence Howard, Jeff Bridges</actors>
+            <specs>
+                <director>Jon Favreau</director>
+                <year>2008</year>
+                <publisher>Marvel</publisher>
+                <length>2h5min</length>
+                <series>Marvel</series>
+                <language>English</language>
+            </specs>
+            <images>
+                <image filename="images/IronManMovie.jpg" caption="cover"/>
+            </images>
+            <comments>
+                <comment new="true" rating="4" author="Mike"> This is a great movie</comment>
+                <comment new="false" rating="5" author="Tom">I love this movie</comment>
+            </comments>
+            <rating>4.5</rating>
+            <price>10.38</price>
+           
+            <sources>
+                <sourceRefId>sIM</sourceRefId>
+            </sources>
+        </comicmovie>
+        <comicmovie id="cm5">
+            <title>Ant-Man (Plus Bonus Features)</title>
+            <description>
+                <p>Ant-Man (Plus Bonus Features)</p>
+            </description>
+            <actors>Paul Rudd, Corey Stoll, Michael Douglas</actors>
+            <specs>
+                <director>Peyton Reed</director>
+                <year>2015</year>
+                <publisher>Marvel</publisher>
+                <length>2h51min</length>
+                <series>Marvel</series>
+                <language>English</language>
+            </specs>
+            <images>
+                <image filename="images/AntManMovie.jpg" caption="cover"/>
+            </images>
+            <comments>
+                <comment new="true" rating="4" author="Mike"> This is a great movie</comment>
+                <comment new="false" rating="5" author="Tom">I love this movie</comment>
+            </comments>
+            <rating>4.5</rating>
+            <price>27.04</price>
+           
+            <sources>
+                <sourceRefId>sAM</sourceRefId>
+            </sources>
+        </comicmovie>
+        <comicmovie id="cm6">
+            <title>Doctor Strange (2016) (Theatrical)</title>
+            <description>
+                <p>Doctor Strange (2016) (Theatrical)</p>
+            </description>
+            <actors>Benedict Cumberbatch, Chiwetel Ejiofor, Rachel McAdams</actors>
+            <specs>
+                <director>Scott Derrickson</director>
+                <year>2016</year>
+                <publisher>Marvel</publisher>
+                <length>1h54min</length>
+                <series>Marvel</series>
+                <language>English</language>
+            </specs>
+            <images>
+                <image filename="images/DSMovie.jpg" caption="cover"/>
+            </images>
+            <comments>
+                <comment new="true" rating="4" author="Mike"> This is a great movie</comment>
+                <comment new="false" rating="5" author="Tom">I love this movie</comment>
+            </comments>
+            <rating>4.5</rating>
+            <price>10.79</price>
+           
+            <sources>
+                <sourceRefId>sDS</sourceRefId>
+            </sources>
+        </comicmovie>
+        <comicmovie id="cm7">
+            <title>Batman: White Knight</title>
+            <description>
+                <p>Batman: White Knight follows the man now known as Jack Napier 
+                    as he embarks on a quest to heal the city he once terrorized. 
+                    After reconciling with his long-suffering partner, Harley Quinn,
+                    he sets in motion a carefully plotted campaign to discredit 
+                    the one person whom he views as Gotham City's true enemy: Batman.</p>
+            </description>
+            <actors></actors>
+            <specs>
+                <director>Bill Watterson</director>
+                <year>2018</year>
+                <publisher>DC Comics</publisher>
+                <length>Paperback</length>
+                <series>DC</series>
+                <language>English</language>
+            </specs>
+            <images>
+                <image filename="images/Batman.jpg" caption="cover"/>
+            </images>
+            <comments>
+                <comment new="true" rating="4" author="Mike"> This is a great movie</comment>
+                <comment new="false" rating="5" author="Tom">I love this movie</comment>
+            </comments>
+            <rating>4.5</rating>
+            <price>12.49</price>
+           
+            <sources>
+                <sourceRefId>sBatman</sourceRefId>
+            </sources>
+        </comicmovie>
+        <comicmovie id="cm8">
+            <title>Batman: Year One </title>
+            <description>
+                <p>A NEW YORK TIMES Bestseller!</p>
+            </description>
+            <actors></actors>
+            <specs>
+                <director>Frank Miller</director>
+                <year>2011</year>
+                <publisher>DC Comics</publisher>
+                <length>Paperback</length>
+                <series>DC</series>
+                <language>English</language>
+            </specs>
+            <images>
+                <image filename="images/BatmanYO.jpg" caption="cover"/>
+            </images>
+            <comments>
+                <comment new="true" rating="4" author="Mike"> This is a great movie</comment>
+                <comment new="false" rating="5" author="Tom">I love this movie</comment>
+            </comments>
+            <rating>4.5</rating>
+            <price>8.89</price>
+           
+            <sources>
+                <sourceRefId>sBatmanYO</sourceRefId>
+            </sources>
+        </comicmovie>
+        <comicmovie id="cm9">
+            <title>Minecraft Volume 1 (Graphic Novel)  </title>
+            <description>
+                <p>Tyler is your everyday kid whose life is changed when his
+                    family has to move from the town he's always known. Thankfully, 
+                    Tyler has a strong group of friends forever linked in the world
+                    of Minecraft! Tyler, along with his friends Evan, Candace, Tobi,
+                    and Grace have been going on countless adventures together across
+                    the expanses of the Overworld and are in need of a new challenge. 
+                    They decide to go on the Ultimate Quest--to travel to the End and 
+                    face off against the ender dragon!</p>
+            </description>
+            <actors></actors>
+            <specs>
+                <director>R. Sfé Monster</director>
+                <year>2019</year>
+                <publisher>Dark Horse movies</publisher>
+                <length>Paperback</length>
+                <series>Others</series>
+                <language>English</language>
+            </specs>
+            <images>
+                <image filename="images/Minecraft.jpg" caption="cover"/>
+            </images>
+            <comments>
+                <comment new="true" rating="4" author="Mike"> This is a great movie</comment>
+                <comment new="false" rating="5" author="Tom">I love this movie</comment>
+            </comments>
+            <rating>4.5</rating>
+            <price>6.39</price>
+           
+            <sources>
+                <sourceRefId>sMinecraft</sourceRefId>
+            </sources>
+        </comicmovie>
+        <comicmovie id="cm10">
+            <title>Marvel Encyclopedia, New Edition </title>
+            <description>
+                <p>Discover the essential facts about Marvel Comics' timeless 
+                    heroes such as Captain America, Spider-Man, and Iron Man,
+                    and villains like Thanos, Loki, and Kingpin.</p>
+                <p> Keep up with the ever-expanding Marvel Universe with this 
+                    new edition of DK's best-selling Marvel Encyclopedia. Updated
+                    and expanded, this definitive Who's Who of Marvel Comics 
+                    reveals vital info and secret histories of more than 1200 
+                    classic and brand new Marvel characters, and provides the 
+                    lowdown on recent key events including Civil War 2, Secret
+                    Empire, and Infinity Countdown.</p>
+                <p>From iconic teams such as the Avengers, X-Men, and Guardians 
+                    of the Galaxy to fan favorites Black Panther, Deadpool, and 
+                    Captain Marvel to rising stars Amadeus Cho, Squirrel Girl 
+                    and the Exiles, every significant Marvel character is showcased
+                    with the latest comic artwork. Meticulously researched, 
+                    expertly written, and stunningly illustrated, the Marvel 
+                    Encyclopedia boasts newly commissioned cover art by one of 
+                    Marvel's hottest up-and-coming talents. Including an introduction 
+                    by Stan Lee, this unique, in-depth, and accessible encyclopedia
+                    is an indispensable guide to Marvel Comics that devoted fans 
+                    and newcomers alike will return to time and again.</p>
+            </description>
+            <actors></actors>
+            <specs>
+                <director>Stan Lee</director>
+                <year>2019</year>
+                <publisher> DK; New edition </publisher>
+                <length>Hardcover</length>
+                <series>Marvel</series>
+                <language>English</language>
+            </specs>
+            <images>
+                <image filename="images/Encyclopedia.jpg" caption="cover"/>
+            </images>
+            <comments>
+                <comment new="true" rating="4" author="Mike"> This is a great movie</comment>
+                <comment new="false" rating="5" author="Tom">I love this movie</comment>
+            </comments>
+            <rating>4.5</rating>
+            <price>21.9</price>
+           
+            <sources>
+                <sourceRefId>sEncyclopedia</sourceRefId>
+            </sources>
+        </comicmovie>
+        <comicmovie id="cm11">
+            <title>The Essential Calvin and Hobbes: A Calvin and Hobbes Treasury </title>
+            <description>
+                <p>DBill Watterson's Calvin and Hobbes has been a worldwide favorite since 
+                    its introduction in 1985. The strip follows the richly imaginative
+                    adventures of Calvin and his trusty tiger, Hobbes. Whether a poignant
+                    look at serious family issues or a round of time-travel (with the aid
+                    of a well-labeled cardboard box), Calvin and Hobbes will astound and delight you.
+                    </p>
+                <p> Beginning with the day Hobbes sprang into Calvin's tuna fish trap, 
+                    the first two Calvin and Hobbes collections, Calvin and Hobbes and 
+                    Something Under The Bed Is Drooling, are brought together in this 
+                    treasury. Including black-and-white dailies and color Sundays,  
+                    The Essential Calvin and Hobbes also features an original full-color 16-page story.</p>
+            </description>
+            <actors></actors>
+            <specs>
+                <director>Bill Watterson</director>
+                <year>2013</year>
+                <publisher> Andrews McMeel Publishing, LLC</publisher>
+                <length>Hardcover</length>
+                <series>Marvel</series>
+                <language>English</language>
+            </specs>
+            <images>
+                <image filename="images/ECH.jpg" caption="cover"/>
+            </images>
+            <comments>
+                <comment new="true" rating="4" author="Mike"> This is a great movie</comment>
+                <comment new="false" rating="5" author="Tom">I love this movie</comment>
+            </comments>
+            <rating>4.5</rating>
+            <price>20.78</price>
+           
+            <sources>
+                <sourceRefId>sECH</sourceRefId>
+            </sources>
+        </comicmovie>
+        <comicmovie id="cm12">
+            <title>Star Wars Vol. 1: Skywalker Strikes</title>
+            <description>
+                <p>The greatest space adventure of all returns to Marvel! 
+                    Luke Skywalker and the ragtag rebels opposing the Galactic
+                    Empire are fresh off their biggest victory so far — the 
+                    destruction of the massive Death Star. But the Empire’s 
+                    not toppled yet! Join Luke, Princess Leia, Han Solo, 
+                    Chewbacca, C-3PO, R2-D2 and the rest of the Rebel Alliance
+                    as they fight for freedom against Darth Vader and his evil 
+                    master, the Emperor! But when a Rebel assault goes wrong,
+                    Han and Leia must think fast to make their escape — while 
+                    Luke comes face-to-face with Darth Vader! In the explosive 
+                    aftermath, a humbled Luke returns to Tatooine to learn more 
+                    about his mentor, Obi-Wan Kenobi. Meanwhile, Leia and Han 
+                    undertake a vital — and dangerous — secret mission. But can 
+                    they succeed without Luke? Plus: the menace of Boba Fett!
+                </p>
+            </description>
+            <actors></actors>
+            <specs>
+                <director>Jason Aaron</director>
+                <year>2015</year>
+                <publisher> Marvel Entertainment US</publisher>
+                <length>Hardcover</length>
+                <series>Marvel</series>
+                <language>English</language>
+            </specs>
+            <images>
+                <image filename="images/StarWar.jpg" caption="cover"/>
+            </images>
+            <comments>
+                <comment new="true" rating="4" author="Mike"> This is a great movie</comment>
+                <comment new="false" rating="5" author="Tom">I love this movie</comment>
+            </comments>
+            <rating>4.5</rating>
+            <price>18.75</price>
+           
+            <sources>
+                <sourceRefId>sStarWar</sourceRefId>
+            </sources>
+        </comicmovie>
+        <comicmovie id="cm13">
+            <title>Ultimate Marvel</title>
+            <description>
+                <p>This definitive Marvel encyclopedia takes an in-depth look at 
+                    the wondrous world of Marvel Comics and its catalogue of iconic 
+                    characters, such as Black Panther, Spider-Man, Thor, the Hulk and Loki.
+                    Includes a foreword by comic movie writer Roy Thomas and original 
+                    cover artwork by esteemed comic movie artist Adi Granov. 
+                </p>
+            </description>
+            <actors></actors>
+            <specs>
+                <director>Jason Aaron</director>
+                <year>2015</year>
+                <publisher> Marvel Entertainment US</publisher>
+                <length>Hardcover</length>
+                <series>Marvel</series>
+                <language>English</language>
+            </specs>
+            <images>
+                <image filename="images/UltimateMarvel.jpg" caption="cover"/>
+            </images>
+            <comments>
+                <comment new="true" rating="4" author="Mike"> This is a great movie</comment>
+                <comment new="false" rating="5" author="Tom">I love this movie</comment>
+            </comments>
+            <rating>4.5</rating>
+            <price>27.97</price>
+           
+            <sources>
+                <sourceRefId>sUM</sourceRefId>
+            </sources>
+        </comicmovie>
+        <comicmovie id="cm14">
+            <title>Immortal Hulk Vol. 5: Breaker of Worlds</title>
+            <description>
+                <p>It's the final showdown - Bruce Banner versus General Fortean,
+                    a man willing to do whatever it takes to destroy the Immortal 
+                    Hulk once and for all, even if it means turning himself into 
+                    what he hates the most. As Shadow Base declares war on anyone
+                    with a gamma mutation, Banner has to decide what kind of Hulk
+                    he wants to be - and what kind of monster he has to become.
+                </p>
+            </description>
+            <actors></actors>
+            <specs>
+                <director>Joey Bennett</director>
+                <year>2019</year>
+                <publisher> Marvel Entertainment US</publisher>
+                <length>PaperBack</length>
+                <series>Marvel</series>
+                <language>English</language>
+            </specs>
+            <images>
+                <image filename="images/Hulk.jpg" caption="cover"/>
+            </images>
+            <comments>
+                <comment new="true" rating="4" author="Mike"> This is a great movie</comment>
+                <comment new="false" rating="5" author="Tom">I love this movie</comment>
+            </comments>
+            <rating>4.5</rating>
+            <price>10.99</price>
+           
+            <sources>
+                <sourceRefId>sHulk</sourceRefId>
+            </sources>
+        </comicmovie>
+        <comicmovie id="cm15">
+            <title>All-Star Superman</title>
+            <description>
+                <p>The Man of Steel goes toe-to-toe with Bizarro, his oddball twin,
+                    and the new character Zibarro, also from the Bizarro planet. And 
+                    Superman faces the final revenge of Lex Luthor in the form of 
+                    his own death! All-Star Superman is a spectacular reimagining of 
+                    the Superman mythos, from the Man of Steel's origin to his greatest foes and beyond.
+                </p>
+            </description>
+            <actors></actors>
+            <specs>
+                <director>Grant Morrison</director>
+                <year>2018</year>
+                <publisher> DC Black Label</publisher>
+                <length>PaperBack</length>
+                <series>DC</series>
+                <language>English</language>
+            </specs>
+            <images>
+                <image filename="images/Superman.jpg" caption="cover"/>
+            </images>
+            <comments>
+                <comment new="true" rating="4" author="Mike"> This is a great movie</comment>
+                <comment new="false" rating="5" author="Tom">I love this movie</comment>
+            </comments>
+            <rating>4.5</rating>
+            <price>19.29</price>
+           
+            <sources>
+                <sourceRefId>sSuperman</sourceRefId>
+            </sources>
+        </comicmovie>
+    </comicmovies>
+</comicmovieBase>
