@@ -53,25 +53,25 @@
                                 <xsl:copy-of select="description"></xsl:copy-of>
                             </div>
                             <div class="author">
-                                <b>Author</b>: <xsl:value-of select="author"/>
+                                <b>Author</b>: <xsl:value-of select="specs/author"/>
                             </div>
                             <div class="year">
-                                <b>Year</b>: <xsl:value-of select="year"/>
+                                <b>Year</b>: <xsl:value-of select="specs/year"/>
                             </div>
                             <div class="price">
-                                <span class="money">$<xsl:value-of select="price"/></span>
+                                <b>Price</b><span class="money">$<xsl:value-of select="price"/></span>
                             </div>
                             <div class="publisher">
-                                <b>publisher</b>: <xsl:value-of select="publisher"/>
+                                <b>publisher</b>: <xsl:value-of select="specs/publisher"/>
                             </div>
                             <div class="series">
-                                <b>series</b>: <xsl:value-of select="series"/>
+                                <b>series</b>: <xsl:value-of select="specs/series"/>
                             </div>
                             <div class="language">
-                                <b>language</b>: <xsl:value-of select="language"/>
+                                <b>language</b>: <xsl:value-of select="specs/language"/>
                             </div>
                             <div class="coverType">
-                                <b>Cover Type</b>: <xsl:value-of select="coverType"/>
+                                <b>Cover Type</b>: <xsl:value-of select="specs/coverType"/>
                             </div>
                             <div class="overallRating">
                                 <b>Overall Rating</b>: <xsl:value-of select="rating"/>
