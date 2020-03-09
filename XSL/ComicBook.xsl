@@ -95,7 +95,7 @@
                                 <b>publisher</b>: <xsl:value-of select="specs/publisher"/>
                             </div>
                             <div class="series">
-                                <b>series</b>: <xsl:value-of select="specs/series"/>
+                                <b>series</b>: <xsl:value-of select="series"/>
                             </div>
                             <div class="language">
                                 <b>language</b>: <xsl:value-of select="specs/language"/>
@@ -146,9 +146,7 @@
         <div class="page">
             <div class="bannerArea"/>
             <div class="globalNavArea">
-                <a href="../html/default.html"><img height="45" width="60" src="../html/images/bmw.jpg"
-                /></a> | <a href="../html/default.html">home</a> | <a href="../html/about.html">about</a>
-                | <a href="../html/{@id}_hierarchy.html">hierarchy</a> | <a href="../html/{@id}_index.html"
+                <a href="">home</a> | <a href="../html/{@id}_hierarchy.html">hierarchy</a> | <a href="../html/{@id}_index.html"
                     >index</a> | <a href="../html/{@id}_sequence.html">sequence</a> | </div>
         </div>
     </xsl:template>
