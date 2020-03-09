@@ -43,11 +43,12 @@
                                                     <xs:element name="year" type="xs:string"/>
                                                     <xs:element name="publisher"  type="xs:string" maxOccurs="unbounded"/>
                                                     <xs:element name="coverType" type="xs:string"/>
-                                                    <xs:element name="series"  type="xs:string" maxOccurs="unbounded"/>
+                                                    
                                                     <xs:element name="language" type="xs:string"/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
+                                        <xs:element name="series"  type="xs:string" maxOccurs="unbounded"/>
                                         <xs:element name="images">
                                             <xs:complexType>
                                                 <xs:sequence>
@@ -105,8 +106,63 @@
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
+                                        <xs:element name="relatedComicbooks">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element maxOccurs="unbounded" ref="comicbookRefId"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
                                     </xs:sequence>
                                     <xs:attribute ref="id" use="required"/>
+                                    
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="category">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="series">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element ref="title"/>
+                                        <xs:element maxOccurs="unbounded" minOccurs="0"
+                                            name="itemRefId" type="xs:IDREF"/>
+                                        <xs:element maxOccurs="unbounded" minOccurs="0"
+                                            name="series"/>
+                                    </xs:sequence>
+                                    <xs:attribute ref="id"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="outieIndex">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="keyword">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element ref="title"/>
+                                        <xs:element maxOccurs="unbounded" name="sectionRefId"
+                                            type="xs:IDREF"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="sequences">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="sequence">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="unbounded" ref="comicbookRefId"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="title" use="required"/>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -139,6 +195,33 @@
         </xs:complexType>
     </xs:element>
     <xs:attribute name="id" type="xs:ID"/>
+    <xs:group name="block">
+        <xs:choice>
+            <xs:element name="media">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="title"/>
+                        <xs:element minOccurs="0" name="caption">
+                            <xs:complexType mixed="true">
+                                <xs:group maxOccurs="unbounded" minOccurs="0" ref="inline"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute ref="id" use="required"/>
+                    <xs:attribute name="url" type="xs:string" use="required"/>
+                    <xs:attribute name="type" use="required">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:NMTOKEN">
+                                <xs:enumeration value="imageWeb"/>
+                                <xs:enumeration value="imageLocal"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="style" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:choice>
+    </xs:group>
     <xs:group name="inline">
         <xs:choice>
             <xs:element minOccurs="0" ref="b"/>
@@ -147,4 +230,5 @@
     </xs:group>
     <xs:element name="b"/>
     <xs:element name="i"/>
+    <xs:element name="comicbookRefId" type="xs:IDREF"/>
 </xs:schema>

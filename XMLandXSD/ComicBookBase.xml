@@ -5,7 +5,6 @@
         <title>COMIC BOOKS</title>
         <author>
             <name>Boya Cao</name>
-            <email>bycao96@uw.edu</email>
         </author>
         <description>
             <p>This is a website contains information about <b>comic books</b> with different
@@ -21,63 +20,63 @@
                 <title>BOWIE: Stardust, Rayguns, and Moonage Daydreams</title>
                 <url>https://www.amazon.com/BOWIE-Stardust-Rayguns-Moonage-Daydreams/</url>
                 <description>
-                    <p>BOWIE: Stardust, Rayguns, and Moonage Daydreams</p>
+                    <p>Bowie Source</p>
                 </description>
             </sourceDef>
             <sourceDef id="sIG">
                 <title>Infinity Gauntlet</title>
                 <url>https://www.amazon.com/Infinity-Gauntlet-Marvel-Premiere-Classic/</url>
                 <description>
-                    <p>Infinity Gauntlet</p>
+                    <p>Infinity Gauntlet Source</p>
                 </description>
             </sourceDef>
             <sourceDef id="sJoker">
                 <title>Joker</title>
                 <url>https://www.amazon.com/Joker-Black-Label-Brian-Azzarello/</url>
                 <description>
-                    <p>Joker</p>
+                    <p>Joker Source</p>
                 </description>
             </sourceDef>
             <sourceDef id="sWoA">
                 <title>Women of Action</title>
                 <url>https://www.amazon.com/DC-Women-Action-Shea-Fontana/</url>
                 <description>
-                    <p>Women of Action</p>
+                    <p>Women of Action Source</p>
                 </description>
             </sourceDef>
             <sourceDef id="sFlashpoint">
                 <title>Flashpoint</title>
                 <url>https://www.amazon.com/Flashpoint-Geoff-Johns-ebook/</url>
                 <description>
-                    <p>Flashpoint</p>
+                    <p>Flashpoint Source</p>
                 </description>
             </sourceDef>
             <sourceDef id="sSpiderman">
                 <title>Spiderman</title>
                 <url>https://www.amazon.com/Spider-Man-Miles-Morales-Vol-1/</url>
                 <description>
-                    <p>Spiderman</p>
+                    <p>Spiderman Source</p>
                 </description>
             </sourceDef>
             <sourceDef id="sBatman">
                 <title>Batman: White Knight</title>
                 <url>https://www.amazon.com/Batman-White-Knight-Sean-Murphy/</url>
                 <description>
-                    <p>Batman: White Knight</p>
+                    <p>Batman: White Knight Source</p>
                 </description>
             </sourceDef>
             <sourceDef id="sBatmanYO">
                 <title>Batman:Year One</title>
                 <url>https://www.amazon.com/Batman-Year-One-Frank-Miller-ebook/</url>
                 <description>
-                    <p>Batman:Year OneBatman</p>
+                    <p>Batman:Year OneBatman Source</p>
                 </description>
             </sourceDef>
             <sourceDef id="sMinecraft">
                 <title>Minecraft</title>
                 <url>https://www.amazon.com/Minecraft-Graphic-Novel-Sf%C3%88-M/</url>
                 <description>
-                    <p>Minecraft</p>
+                    <p>Minecraft Source</p>
                 </description>
             </sourceDef>
             <sourceDef id="sEncyclopedia">
@@ -91,14 +90,14 @@
                 <title>The Essential Calvin and Hobbes: A Calvin and Hobbes Treasury</title>
                 <url>https://www.amazon.com/Essential-Calvin-Hobbes-Treasury-ebook/</url>
                 <description>
-                    <p>The Essential Calvin and Hobbes: A Calvin and Hobbes Treasury Source</p>
+                    <p>The Essential Calvin and Hobbes Source</p>
                 </description>
             </sourceDef>
             <sourceDef id="sStarWar">
                 <title>Star Wars Vol. 1: Skywalker Strikes </title>
                 <url>https://www.amazon.com/Star-Wars-Vol-Skywalker-Strikes-ebook/dp/B0153WYYEW/</url>
                 <description>
-                    <p>Star Wars Vol. 1: Skywalker Strikes </p>
+                    <p>Star Wars Vol. 1: Skywalker Strikes Source</p>
                 </description>
             </sourceDef>
             <sourceDef id="sUM">
@@ -112,7 +111,7 @@
                 <title>Hulk</title>
                     <url>https://www.amazon.com/Immortal-Hulk-Vol-Breaker-Worlds/</url>
                 <description>
-                    <p>Hulk</p>
+                    <p>Hulk Source</p>
                 </description>
             </sourceDef>
             <sourceDef id="sSuperman">
@@ -150,9 +149,9 @@
                 <year>2020</year>
                 <publisher>DC Comics</publisher>
                 <coverType>HardCover</coverType>
-                <series>DC</series>
                 <language>English</language>
             </specs>
+            <series>DC</series>
             <images>
                 <image filename="images/ComicBook/Bowie.jpg" caption="cover"/>
             </images>
@@ -166,6 +165,14 @@
             <sources>
                 <sourceRefId>sBowie</sourceRefId>
             </sources>
+            <relatedComicbooks>
+                <comicbookRefId>cb3</comicbookRefId>
+                <comicbookRefId>cb4</comicbookRefId>
+                <comicbookRefId>cb5</comicbookRefId>
+                <comicbookRefId>cb7</comicbookRefId>
+                <comicbookRefId>cb8</comicbookRefId>
+                <comicbookRefId>cb15</comicbookRefId>
+            </relatedComicbooks>
         </comicbook>
         <comicbook id="cb2">
             <title>Infinity Gauntlet</title>
@@ -187,9 +194,9 @@
                 <year>2010</year>
                 <publisher>Marvel</publisher>
                 <coverType>HardCover</coverType>
-                <series>Marvel</series>
                 <language>English</language>
             </specs>
+            <series>Marvel</series>
             <images>
                 <image filename="images/ComicBook/InfinityGauntlet.jpg" caption="cover"/>
             </images>
@@ -203,6 +210,12 @@
             <sources>
                 <sourceRefId>sIG</sourceRefId>
             </sources>
+            <relatedComicbooks>
+                <comicbookRefId>cb6</comicbookRefId>
+                <comicbookRefId>cb10</comicbookRefId>
+                <comicbookRefId>cb13</comicbookRefId>
+                <comicbookRefId>cb14</comicbookRefId>
+            </relatedComicbooks>
         </comicbook>
         <comicbook id="cb3">
             <title>Joker</title>
@@ -225,9 +238,9 @@
                 <year>2019</year>
                 <publisher>DC Comics</publisher>
                 <coverType>HardCover</coverType>
-                <series>DC</series>
                 <language>English</language>
             </specs>
+            <series>DC</series>
             <images>
                 <image filename="images/ComicBook/Joke.jpg" caption="cover"/>
             </images>
@@ -241,6 +254,14 @@
             <sources>
                 <sourceRefId>sJoker</sourceRefId>
             </sources>
+            <relatedComicbooks>
+                <comicbookRefId>cb1</comicbookRefId>
+                <comicbookRefId>cb4</comicbookRefId>
+                <comicbookRefId>cb5</comicbookRefId>
+                <comicbookRefId>cb7</comicbookRefId>
+                <comicbookRefId>cb8</comicbookRefId>
+                <comicbookRefId>cb15</comicbookRefId>
+            </relatedComicbooks>
         </comicbook>
         <comicbook id="cb4">
             <title>DC:Women of Action</title>
@@ -261,9 +282,9 @@
                 <year>2019</year>
                 <publisher>DC Comics</publisher>
                 <coverType>HardCover</coverType>
-                <series>DC</series>
                 <language>English</language>
             </specs>
+            <series>DC</series>
             <images>
                 <image filename="images/ComicBook/WomenOfAction.jpg" caption="cover"/>
             </images>
@@ -277,6 +298,14 @@
             <sources>
                 <sourceRefId>sWoA</sourceRefId>
             </sources>
+            <relatedComicbooks>
+                <comicbookRefId>cb1</comicbookRefId>
+                <comicbookRefId>cb3</comicbookRefId>
+                <comicbookRefId>cb5</comicbookRefId>
+                <comicbookRefId>cb7</comicbookRefId>
+                <comicbookRefId>cb8</comicbookRefId>
+                <comicbookRefId>cb15</comicbookRefId>
+            </relatedComicbooks>
         </comicbook>
         <comicbook id="cb5">
             <title>Flashpoint</title>
@@ -292,9 +321,9 @@
                 <year>2012</year>
                 <publisher>DC Comics</publisher>
                 <coverType>HardCover</coverType>
-                <series>DC</series>
                 <language>English</language>
             </specs>
+            <series>DC</series>
             <images>
                 <image filename="images/ComicBook/Flashpoint.jpg" caption="cover"/>
             </images>
@@ -308,6 +337,14 @@
             <sources>
                 <sourceRefId>sFlashpoint</sourceRefId>
             </sources>
+            <relatedComicbooks>
+                <comicbookRefId>cb1</comicbookRefId>
+                <comicbookRefId>cb3</comicbookRefId>
+                <comicbookRefId>cb4</comicbookRefId>
+                <comicbookRefId>cb7</comicbookRefId>
+                <comicbookRefId>cb8</comicbookRefId>
+                <comicbookRefId>cb15</comicbookRefId>
+            </relatedComicbooks>
         </comicbook>
         <comicbook id="cb6">
             <title>Spiderman:Miles Morales Vol.1</title>
@@ -331,9 +368,9 @@
                 <year>2016</year>
                 <publisher>Marvel</publisher>
                 <coverType>Paperback</coverType>
-                <series>Marvel</series>
                 <language>English</language>
             </specs>
+            <series>Marvel</series>
             <images>
                 <image filename="images/ComicBook/Spiderman.jpg" caption="cover"/>
             </images>
@@ -347,6 +384,12 @@
             <sources>
                 <sourceRefId>sSpiderman</sourceRefId>
             </sources>
+            <relatedComicbooks>
+                <comicbookRefId>cb2</comicbookRefId>
+                <comicbookRefId>cb10</comicbookRefId>
+                <comicbookRefId>cb13</comicbookRefId>
+                <comicbookRefId>cb14</comicbookRefId>
+            </relatedComicbooks>
         </comicbook>
         <comicbook id="cb7">
             <title>Batman: White Knight</title>
@@ -362,9 +405,9 @@
                 <year>2018</year>
                 <publisher>DC Comics</publisher>
                 <coverType>Paperback</coverType>
-                <series>DC</series>
                 <language>English</language>
             </specs>
+            <series>DC</series>
             <images>
                 <image filename="images/ComicBook/Batman.jpg" caption="cover"/>
             </images>
@@ -378,6 +421,14 @@
             <sources>
                 <sourceRefId>sBatman</sourceRefId>
             </sources>
+            <relatedComicbooks>
+                <comicbookRefId>cb1</comicbookRefId>
+                <comicbookRefId>cb3</comicbookRefId>
+                <comicbookRefId>cb4</comicbookRefId>
+                <comicbookRefId>cb5</comicbookRefId>
+                <comicbookRefId>cb8</comicbookRefId>
+                <comicbookRefId>cb15</comicbookRefId>
+            </relatedComicbooks>
         </comicbook>
         <comicbook id="cb8">
             <title>Batman: Year One </title>
@@ -389,9 +440,9 @@
                 <year>2011</year>
                 <publisher>DC Comics</publisher>
                 <coverType>Paperback</coverType>
-                <series>DC</series>
                 <language>English</language>
             </specs>
+            <series>DC</series>
             <images>
                 <image filename="images/ComicBook/BatmanYO.jpg" caption="cover"/>
             </images>
@@ -405,6 +456,14 @@
             <sources>
                 <sourceRefId>sBatmanYO</sourceRefId>
             </sources>
+            <relatedComicbooks>
+                <comicbookRefId>cb1</comicbookRefId>
+                <comicbookRefId>cb3</comicbookRefId>
+                <comicbookRefId>cb4</comicbookRefId>
+                <comicbookRefId>cb5</comicbookRefId>
+                <comicbookRefId>cb7</comicbookRefId>
+                <comicbookRefId>cb15</comicbookRefId>
+            </relatedComicbooks>
         </comicbook>
         <comicbook id="cb9">
             <title>Minecraft Volume 1 (Graphic Novel)  </title>
@@ -423,9 +482,9 @@
                 <year>2019</year>
                 <publisher>Dark Horse Books</publisher>
                 <coverType>Paperback</coverType>
-                <series>Others</series>
                 <language>English</language>
             </specs>
+            <series>Others</series>
             <images>
                 <image filename="images/ComicBook/Minecraft.jpg" caption="cover"/>
             </images>
@@ -439,6 +498,9 @@
             <sources>
                 <sourceRefId>sMinecraft</sourceRefId>
             </sources>
+            <relatedComicbooks>
+                <comicbookRefId>cb11</comicbookRefId>
+            </relatedComicbooks>
         </comicbook>
         <comicbook id="cb10">
             <title>Marvel Encyclopedia, New Edition </title>
@@ -470,9 +532,9 @@
                 <year>2019</year>
                 <publisher> DK; New edition </publisher>
                 <coverType>Hardcover</coverType>
-                <series>Marvel</series>
                 <language>English</language>
             </specs>
+            <series>Marvel</series>
             <images>
                 <image filename="images/ComicBook/Encyclopedia.jpg" caption="cover"/>
             </images>
@@ -486,6 +548,12 @@
             <sources>
                 <sourceRefId>sEncyclopedia</sourceRefId>
             </sources>
+            <relatedComicbooks>
+                <comicbookRefId>cb2</comicbookRefId>
+                <comicbookRefId>cb6</comicbookRefId>
+                <comicbookRefId>cb13</comicbookRefId>
+                <comicbookRefId>cb14</comicbookRefId>
+            </relatedComicbooks>
         </comicbook>
         <comicbook id="cb11">
             <title>The Essential Calvin and Hobbes: A Calvin and Hobbes Treasury </title>
@@ -507,9 +575,9 @@
                 <year>2013</year>
                 <publisher> Andrews McMeel Publishing, LLC</publisher>
                 <coverType>Hardcover</coverType>
-                <series>Marvel</series>
                 <language>English</language>
             </specs>
+            <series>Others</series>
             <images>
                 <image filename="images/ComicBook/ECH.jpg" caption="cover"/>
             </images>
@@ -523,6 +591,9 @@
             <sources>
                 <sourceRefId>sECH</sourceRefId>
             </sources>
+            <relatedComicbooks>
+                <comicbookRefId>cb9</comicbookRefId>
+            </relatedComicbooks>
         </comicbook>
         <comicbook id="cb12">
             <title>Star Wars Vol. 1: Skywalker Strikes</title>
@@ -548,9 +619,9 @@
                 <year>2015</year>
                 <publisher> Marvel Entertainment US</publisher>
                 <coverType>Hardcover</coverType>
-                <series>Marvel</series>
                 <language>English</language>
             </specs>
+            <series>Star Wars</series>
             <images>
                 <image filename="images/ComicBook/StarWar.jpg" caption="cover"/>
             </images>
@@ -564,6 +635,9 @@
             <sources>
                 <sourceRefId>sStarWar</sourceRefId>
             </sources>
+            <relatedComicbooks>
+                <comicbookRefId>cb9</comicbookRefId>
+            </relatedComicbooks>
         </comicbook>
         <comicbook id="cb13">
             <title>Ultimate Marvel</title>
@@ -580,9 +654,9 @@
                 <year>2015</year>
                 <publisher> Marvel Entertainment US</publisher>
                 <coverType>Hardcover</coverType>
-                <series>Marvel</series>
                 <language>English</language>
             </specs>
+            <series>Marvel</series>
             <images>
                 <image filename="images/ComicBook/UltimateMarvel.jpg" caption="cover"/>
             </images>
@@ -596,6 +670,12 @@
             <sources>
                 <sourceRefId>sUM</sourceRefId>
             </sources>
+            <relatedComicbooks>
+                <comicbookRefId>cb2</comicbookRefId>
+                <comicbookRefId>cb6</comicbookRefId>
+                <comicbookRefId>cb10</comicbookRefId>
+                <comicbookRefId>cb14</comicbookRefId>
+            </relatedComicbooks>
         </comicbook>
         <comicbook id="cb14">
             <title>Immortal Hulk Vol. 5: Breaker of Worlds</title>
@@ -613,9 +693,9 @@
                 <year>2019</year>
                 <publisher> Marvel Entertainment US</publisher>
                 <coverType>PaperBack</coverType>
-                <series>Marvel</series>
                 <language>English</language>
             </specs>
+            <series>Marvel</series>
             <images>
                 <image filename="images/ComicBook/Hulk.jpg" caption="cover"/>
             </images>
@@ -629,6 +709,12 @@
             <sources>
                 <sourceRefId>sHulk</sourceRefId>
             </sources>
+            <relatedComicbooks>
+                <comicbookRefId>cb2</comicbookRefId>
+                <comicbookRefId>cb6</comicbookRefId>
+                <comicbookRefId>cb10</comicbookRefId>
+                <comicbookRefId>cb13</comicbookRefId>
+            </relatedComicbooks>
         </comicbook>
         <comicbook id="cb15">
             <title>All-Star Superman</title>
@@ -645,9 +731,9 @@
                 <year>2018</year>
                 <publisher> DC Black Label</publisher>
                 <coverType>PaperBack</coverType>
-                <series>DC</series>
                 <language>English</language>
             </specs>
+            <series>DC</series>
             <images>
                 <image filename="images/ComicBook/Superman.jpg" caption="cover"/>
             </images>
@@ -661,6 +747,90 @@
             <sources>
                 <sourceRefId>sSuperman</sourceRefId>
             </sources>
+            <relatedComicbooks>
+                <comicbookRefId>cb1</comicbookRefId>
+                <comicbookRefId>cb3</comicbookRefId>
+                <comicbookRefId>cb4</comicbookRefId>
+                <comicbookRefId>cb5</comicbookRefId>
+                <comicbookRefId>cb7</comicbookRefId>
+                <comicbookRefId>cb8</comicbookRefId>
+                
+            </relatedComicbooks>
         </comicbook>
     </comicbooks>
+    <category>
+        <series id="allcomicbooks">
+            <title>All Comicbooks</title>
+            <series id="DC">
+                <title>DC Series</title>
+                <itemRefId>cb1</itemRefId>
+                <itemRefId>cb3</itemRefId>
+                <itemRefId>cb4</itemRefId>
+                <itemRefId>cb5</itemRefId>
+                <itemRefId>cb7</itemRefId>
+                <itemRefId>cb8</itemRefId>
+                <itemRefId>cb15</itemRefId>
+            </series>
+            <series id="Marvel">
+                <title>Marvel Series</title>
+                <itemRefId>cb2</itemRefId>
+                <itemRefId>cb6</itemRefId>
+                <itemRefId>cb10</itemRefId>
+                <itemRefId>cb13</itemRefId>
+                <itemRefId>cb14</itemRefId>
+            </series>
+            <series id="Others">
+                <title>Others</title>
+                <series id="KidFriendly">
+                <title>Kid Friendly</title>
+                <itemRefId>cb11</itemRefId>
+                </series>
+                <series id="Minecraft">
+                    <title>Minecraft</title>
+                    <itemRefId>cb9</itemRefId>
+                </series>
+                <series id="StarWar">
+                    <title>Star War</title>
+                    <itemRefId>cb12</itemRefId>
+                </series>
+            </series>
+        </series>
+    </category>
+    <outieIndex>
+        <keyword>
+            <title>Super Heros</title>
+            <sectionRefId>cb1</sectionRefId>
+            <sectionRefId>cb2</sectionRefId>
+            <sectionRefId>cb3</sectionRefId>
+            <sectionRefId>cb4</sectionRefId>
+            <sectionRefId>cb5</sectionRefId>
+            <sectionRefId>cb6</sectionRefId>
+            <sectionRefId>cb7</sectionRefId>
+            <sectionRefId>cb8</sectionRefId>
+            <sectionRefId>cb10</sectionRefId>
+            <sectionRefId>cb13</sectionRefId>
+            <sectionRefId>cb14</sectionRefId>
+            <sectionRefId>cb15</sectionRefId>
+        </keyword>
+        <keyword>
+            <title>Others</title>
+            <sectionRefId>cb9</sectionRefId>
+            <sectionRefId>cb11</sectionRefId>
+            <sectionRefId>cb12</sectionRefId>
+        </keyword>
+    </outieIndex>
+    <sequences>
+        <sequence title="Comic book Sequence by Year">
+            <comicbookRefId>cb2</comicbookRefId>
+            <comicbookRefId>cb8</comicbookRefId>
+            <comicbookRefId>cb5</comicbookRefId>
+            <comicbookRefId>cb11</comicbookRefId>
+            <comicbookRefId>cb6</comicbookRefId>
+            <comicbookRefId>cb7</comicbookRefId>
+            <comicbookRefId>cb3</comicbookRefId>
+            <comicbookRefId>cb4</comicbookRefId>
+            <comicbookRefId>cb9</comicbookRefId>
+            <comicbookRefId>cb10</comicbookRefId>
+        </sequence>
+    </sequences>
 </comicbookBase>
